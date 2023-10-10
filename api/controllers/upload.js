@@ -6,7 +6,7 @@ exports.upload_link=async(req,res)=>{
     await imageDownloader.image(
         {
             url:link,
-            dest:'/home/vishal_kuwar/Desktop/web-d/PROJECTS/VenueVista/api'+'/uploads/'+newName,
+            dest:'/home/vishal_kuwar/Desktop/web-d/PROJECTS/VenueVistaa/api'+'/uploads/'+newName,
         }
     );
     res.json(newName);

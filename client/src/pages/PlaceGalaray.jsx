@@ -17,7 +17,7 @@ export default function PlaceGalaray({place}){
                     </div>
                     {place?.photos?.length > 0 && place.photos.map(photo=>(
                         <div>
-                            <img src={'http://localhost:4000/uploads/'+photo} alt="" />
+                            <img src={'http://localhost:5000/uploads/'+photo} alt="" />
                         </div>
                     ))}
                 </div>
@@ -30,25 +30,25 @@ export default function PlaceGalaray({place}){
                     <div className="flex w-96 h-196">
                         {place.photos?.[0]  && (
                             <div>
-                                <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl" src={'http://localhost:4000/uploads/'+place.photos[0]} alt="" />
+                                <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl" src={'http://localhost:5000/uploads/'+place.photos[0]} alt="" />
                             </div>  
                         )}
                     </div>
                     <div className="flex w-96 h-96">
                         {place.photos?.[1]  && (
-                            <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl  " src={'http://localhost:4000/uploads/'+place.photos[1]} alt="" />
+                            <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl  " src={'http://localhost:5000/uploads/'+place.photos[1]} alt="" />
                         )}
                     </div>
 
                     <div className="flex w-96 h-96">
                         {place.photos?.[2]  && (
-                            <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl  " src={'http://localhost:4000/uploads/'+place.photos[2]} alt="" />
+                            <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl  " src={'http://localhost:5000/uploads/'+place.photos[2]} alt="" />
                         )}
                     </div>
 
                     <div className="flex w-96 h-96">
                         {place.photos?.[3]  && (
-                            <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl  " src={'http://localhost:4000/uploads/'+place.photos[3]} alt="" />
+                            <img onClick={()=>setshowallphotos(true)}  className="cursor-pointer object-cover w-full h-full rounded-3xl  " src={'http://localhost:5000/uploads/'+place.photos[3]} alt="" />
                         )}
                     </div>
                 </div>   
